@@ -4,6 +4,7 @@ const{
 createApp({
     data(){
         return {
+            newTask:'',
            tasks:['fare i compiti',
         'fare la spesa',
     'pulire casa'
@@ -15,6 +16,14 @@ createApp({
 
     },
     methods:{
+        addTask(){
+
+            if(this.newTask !==''){
+                            this.tasks.push(this.newTask)
+
+            }
+            this.newTask=''
+        }
        
     }
 }).mount('#app')

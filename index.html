@@ -20,11 +20,14 @@
                         name="task"
                         id="task"
                         aria-describedby="new task"
-                        placeholder="Nuova attività da fare ...">
+                        placeholder="Nuova attività da fare ..."
+                        v-model="newTask">
 
 
                     </div>    
-                    <button class="col-3 btn btn-primary">Aggiungi</button>                
+                    <button class="col-3 btn btn-primary"
+                    @click="newTask">
+                    Aggiungi</button>                
 
                 </div>
                 <div class="bg-light text-dark rounded p-3 mt-5">

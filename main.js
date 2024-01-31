@@ -4,7 +4,7 @@ const{
 createApp({
     data(){
         return {
-           
+           tasks:[]
         }
         
     },

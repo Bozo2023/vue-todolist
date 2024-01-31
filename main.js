@@ -4,16 +4,29 @@ const {
 createApp({
     data(){
         return {
-            newTask:'',
+            newTask:{
+                text:'',
+                done:false
+                },
             tasks:[
-                'fare i compiti', 
-                'fare la spesa',
-                'pulire casa'
+               {
+                text:'fare i compiti',
+                done:true
+               } ,
+               {
+                text:'fare la spesa',
+                done:true
+               },
+               {
+                text:'pulire casa',
+                done:true
+               }
+ 
             ]
         } 
     },
-    create(){
-        console.log('ciao')
+    created(){
+         
     },
     methods: {
         addTask(){

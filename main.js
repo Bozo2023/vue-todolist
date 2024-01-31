@@ -4,7 +4,10 @@ const{
 createApp({
     data(){
         return {
-           tasks:[]
+           tasks:['fare i compiti',
+        'fare la spesa',
+    'pulire casa'
+]
         }
         
     },

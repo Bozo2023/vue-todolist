@@ -21,7 +21,7 @@
                         id="task"
                         aria-describedby="new task"
                         placeholder="Nuova attività da fare ..."
-                        v-model="newTask">
+                        v-model="newTask.text">
 
 
                     </div>    
@@ -37,7 +37,8 @@
                         v-for="( element , index ) in tasks"
                         :key="index"
                         class="d-flex justify-content-between border-bottom mt-3">
-                            <p>
+                            <p
+                             @click="checkText(index)">
                                 {{element.text}}
                             </p>
                             <span @click="removeTask(index)">

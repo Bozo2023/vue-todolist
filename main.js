@@ -30,14 +30,20 @@ createApp({
     },
     methods: {
         addTask(){
+            const task={
+                ...this.newTask
+            }
 
             if(this.newTask !== ''){
-                this.tasks.push(this.newTask)
+                this.tasks.unshift(this.newTask)
             }
             this.newTask = ''
         },
         removeTask(index){
-            this.tasks.splice(index,1)
+            this.tasks.splice( index , 1)
+        },
+        checkText(index){
+            this.tasks[index].done = !this.tasks[index].done
         }
     }
 } ).mount('#app')

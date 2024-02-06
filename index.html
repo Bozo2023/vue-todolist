@@ -38,6 +38,7 @@
                         :key="index"
                         class="d-flex justify-content-between border-bottom mt-3">
                             <p
+                            :class="{'text-decoration-line-through': element.done}"
                              @click="checkText(index)">
                                 {{element.text}}
                             </p>

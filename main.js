@@ -15,7 +15,7 @@ createApp({
                } ,
                {
                 text:'fare la spesa',
-                done:true
+                done:false
                },
                {
                 text:'pulire casa',
